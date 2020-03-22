@@ -1,0 +1,39 @@
+<header class="header text-center">  
+      {%- assign default_paths = site.pages | map: "path" -%}
+      {%- assign page_paths = site.header_pages | default: default_paths -%}
+
+      <h1 class="blog-name pt-lg-4 mb-0"><a href="{{site.url}}">{{site.author | escape}}'s blog</a></h1>
+        
+      <nav class="navbar navbar-expand-lg navbar-dark" >
+           
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div id="navigation" class="collapse navbar-collapse flex-column" >
+        <div class="profile-section pt-3 pt-lg-0">
+          <img class="profile-image mb-3 rounded-circle mx-auto" src="{{site.url}}/assets/images/profile.png" alt="image" >
+          <div class="bio">
+            金樽清酒斗十千，玉盘珍羞直万钱。<br>
+            停杯投箸不能食，拔剑四顾心茫然。<br>
+            欲渡黄河冰塞川，将登太行雪满山。<br>
+            闲来垂钓碧溪上，忽复乘舟梦日边。<br>
+            行路难，行路难，多歧路，今安在？<br>
+            长风破浪会有时，直挂云帆济沧海。<br>
+          </div>
+          <div class="bio mb-1" style="text-align: right;">——李白《行路难》</div>
+          {%- include social.html -%}
+              <hr> 
+        </div><!--//profile-section-->
+        
+        <ul class="navbar-nav flex-column text-left">
+          <li class="nav-item active">
+              <a class="nav-link" href="{{site.url}}"><i class="fas fa-home fa-fw mr-2"></i>Blog Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="{{site.url}}/about/"><i class="fas fa-user fa-fw mr-2"></i>About Me</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+</header>

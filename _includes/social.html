@@ -1,0 +1,11 @@
+<ul class="social-list list-inline py-3 mx-auto">
+    {%- if site.github_username -%}
+    <li class="list-inline-item"><a href="https://github.com/{{ site.github_username| cgi_escape | escape }}">GitHub</a></li>
+    {%- endif -%}
+    {%- if site.twitter_username -%}
+    <li class="list-inline-item"><a href="https://www.twitter.com/{{ site.twitter_username| cgi_escape | escape }}">Twitter</a></li>
+    {%- endif -%}
+    {%- if site.linkedin_username -%}
+    <li class="list-inline-item"><a href="ttps://www.linkedin.com/in/{{ site.linkedin_username| cgi_escape | escape }}">Linkedin</a></li>
+    {%- endif -%}
+</ul><!--//social-list-->
