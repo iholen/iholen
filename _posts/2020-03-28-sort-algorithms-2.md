@@ -89,7 +89,61 @@ public void swap(int[] nums, int i, int j) {
 ### 快速排序
 
 ```java
-// TODO: 待完善
+/**
+ * 快速排序
+ * @param nums
+ */
+public void quickSort(int[] nums) {
+    quickSort(nums, 0, nums.length - 1);
+}
+/**
+ * 分段排序
+ * @param nums
+ * @param left
+ * @param right
+ */
+public void quickSort(int[] nums, int left, int right) {
+    if (left >= right)
+        return;
+    int i = left;
+    int j = right;
+    int refIndex = left;
+    // 终止条件
+    while (i < j) {
+        // 从右边找到小于基准数的下标
+        while (i < j && nums[j] >= nums[refIndex]) {
+            j--;
+        }
+        // 将找到的那个数移到基准数左边(交换位置)
+        swap(nums, refIndex, j);
+        // 修改基准数下标
+        refIndex = j;
+        // 再从左边找到大于基准数的下标
+        while (i < j && nums[i] <= nums[refIndex]) {
+            i++;
+        }
+        // 将找到的那个数移到基准数右边(交换位置)
+        swap(nums, refIndex, i);
+        // 修改基准数下标
+        refIndex = i;
+    }
+    // 递归，继续排左边
+    quickSort(nums, left, i - 1);
+    // 递归，继续排右边
+    quickSort(nums, i + 1, right);
+}
+/**
+ * 交换
+ * @param nums
+ * @param i
+ * @param j
+ */
+public void swap(int[] nums, int i, int j) {
+    if (i == j) return;
+    nums[i] += nums[j];
+    nums[j] = nums[i] - nums[j];
+    nums[i] = nums[i] - nums[j];
+}
 ```
 ---
 ### 三者对比
