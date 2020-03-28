@@ -6,7 +6,7 @@ categories: algorithm
 author: iholen
 introduction: 插入、希尔、归并
 ---
-### ** 插入排序 **
+### 插入排序
 
 ```java
 /**
@@ -32,7 +32,7 @@ public void insertSort(int[] nums) {
 }
 
 ```
-### ** 希尔排序 **
+### 希尔排序
 
 ```java
 /**
@@ -63,7 +63,7 @@ public void shellSort(int[] nums) {
 }
 
 ```
-### ** 归并排序 **
+### 归并排序
 
 ```java
 /**
@@ -124,5 +124,12 @@ public void merge(int[] nums, int left, int mid, int right) {
         nums[k] = tempArr[k];
     }
 }  
-
 ```
+---
+### 三者对比
+
+| 排序名称 | 时间复杂度 | 是否稳定 | 额外空间开销 |
+|:----|:----|:----|:----|
+| 插入排序 | O(n^2) | 稳定 | O(1) |
+| 希尔排序 | O(n^2) | 不稳定 | O(1) |
+| 归并排序 | O(n^2) | 稳定 | O(n) |
