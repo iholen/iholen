@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "插入、希尔、归并排序"
+title:  "排序算法之插入、希尔、归并排序"
 date:   2020-03-28 14:25:05 +0800
 categories: algorithm
 author: iholen
-introduction: 插入、希尔、归并
+introduction: 插入、希尔、归并排序实现和对比
 ---
 ### 插入排序
 
@@ -132,4 +132,4 @@ public void merge(int[] nums, int left, int mid, int right) {
 |:----|:----|:----|:----|
 | 插入排序 | O(n^2) | 稳定 | O(1) |
 | 希尔排序 | O(n^2) | 不稳定 | O(1) |
-| 归并排序 | O(n^2) | 稳定 | O(n) |
+| 归并排序 | O(nlogn) | 稳定 | O(n) |
