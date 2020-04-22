@@ -18,6 +18,7 @@ introduction: 数据结构之哈夫曼树自实现
 [5, 3, 8, 1, 4, 7, 2]
 ```
 * 代码实现
+
 ```java
 public class HuffmanTree {
 
@@ -108,6 +109,7 @@ class Node implements Comparable<Node> {
 
 }
 ```
+
 * 构建后，树的结构
 
 ![Huffman](/iholen/assets/images/huffman.jpg)
