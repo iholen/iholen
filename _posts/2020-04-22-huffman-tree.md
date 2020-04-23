@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "数据结构之哈夫曼树自实现"
+title:  "数据结构之哈夫曼树"
 date:   2020-04-22 21:43:05 +0800
 categories: algorithm
 author: iholen
-introduction: 数据结构之哈夫曼树自实现
+introduction: 数据结构之哈夫曼树
 ---
 ### 最优二叉树(哈夫曼树)
 哈夫曼树是带权路径长度最短的树，权值较大的结点离根较近。
@@ -21,11 +21,9 @@ introduction: 数据结构之哈夫曼树自实现
 
 ```java
 public class HuffmanTree {
-
     public static void main(String[] args) {
         String[] values = {"a", "b", "c", "d", "e", "f", "g"};
         int[] weights = {5, 3, 8, 1, 4, 7, 2};
-
         Node[] nodes = new Node[values.length];
         PriorityQueue<Node> queue = new PriorityQueue<>();
         for (int i = 0; i < values.length; i++) {
@@ -43,11 +41,9 @@ public class HuffmanTree {
         }
         Node head = queue.poll();
     }
-
 }
 
 class Node implements Comparable<Node> {
-
     private String value;
     private int weight;
     private Node left;
