@@ -87,7 +87,7 @@ public class MyClassLoader extends ClassLoader {
     
 * 打破双亲委派
 
-Tomcat的WebappClassLoader
+Tomcat的CommonClassLoader、WebappClassLoader、SharedClassLoader
 
 
 
