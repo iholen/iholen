@@ -87,6 +87,26 @@ public class MyClassLoader extends ClassLoader {
     
 * 打破双亲委派
 
+1. 重写`loadClass`-简易版
+
+```java
+    @Override
+    protected Class<?> loadClass(String name, boolean resolve) throws ClassNotFoundException {
+        synchronized (getClassLoadingLock(name)) {
+            Class<?> c = findLoadedClass(name);
+            if (c == null) {
+                // 设置指定包下的类由自定义类加载器加载，而不向上委托
+                if (name.startsWith("jvm")) {
+                    c = findClass(name);
+                } else {
+                    c = getParent().loadClass(name);
+                }
+            }
+            return c;
+        }
+    }
+```
+
 Tomcat的CommonClassLoader、WebappClassLoader、SharedClassLoader
 
 
