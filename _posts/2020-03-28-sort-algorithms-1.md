@@ -3,7 +3,7 @@ layout: post
 title:  "排序算法之插入、希尔、归并排序"
 date:   2020-03-28 14:25:05 +0800
 categories: algorithm
-author: iholen
+author: heoller
 introduction: 插入、希尔、归并排序实现和对比
 ---
 ### 插入排序

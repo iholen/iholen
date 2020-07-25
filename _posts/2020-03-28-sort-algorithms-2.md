@@ -3,7 +3,7 @@ layout: post
 title:  "排序算法之选择、冒泡、快速排序"
 date:   2020-03-28 14:25:05 +0800
 categories: algorithm
-author: iholen
+author: heoller
 introduction: 选择、冒泡、快速排序实现和对比
 ---
 ### 选择排序

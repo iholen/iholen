@@ -3,7 +3,7 @@ layout: post
 title:  "JVM之类加载子系统"
 date:   2020-05-01 16:18:50 +0800
 categories: jvm
-author: iholen
+author: heoller
 introduction: JVM之类加载子系统
 ---
 ## 类加载子系统

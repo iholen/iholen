@@ -3,7 +3,7 @@ layout: post
 title:  "JVM之运行时数据区"
 date:   2020-05-02 10:28:50 +0800
 categories: jvm
-author: iholen
+author: heoller
 introduction: 运行时数据区
 ---
 ## 栈

@@ -3,7 +3,7 @@ layout: post
 title:  "数据结构之哈夫曼树"
 date:   2020-04-22 21:43:05 +0800
 categories: algorithm
-author: iholen
+author: heoller
 introduction: 数据结构之哈夫曼树
 ---
 ### 最优二叉树(哈夫曼树)
